@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pardeep fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2:wght@700&family=Fjalla+One&family=PT+Serif&display=swap" rel="stylesheet">
+    <style>
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') ;
+            background-size: 100%;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+        .left{
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 80px;
+            top: 20px;
+        }
+        .left img{
+            width: 111px;
+            margin: 3px 8px;
+            filter: invert();
+        }
+        .left div{
+            text-align: center;
+            font-size: 16px;
+            line-height: 12px;
+        }
+        .center{
+            /* border: 3px solid green; */
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+        }
+        .right{
+            /* border: 3px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            margin: 1px 32px;
+            padding: 1px 23px;
+        } 
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 19px;
+            
+        }
+        .navbar li a{
+            
+            text-decoration: none;
+            padding: 34px 20px;
+            color: rgb(214, 230, 255);
+            
+        }
+        .navbar li a:hover, .navbar li a.active {
+            color: rgb(189, 189, 189);
+            text-decoration: underline;
+        }
+        
+        .btn{
+            color: honeydew;
+            background-color: rgb(59, 58, 58);
+            margin: 2px 8px;
+            padding: 4px 18px;
+            font-family: 'Baloo Bhai 2', cursive;
+            
+            font-size: 14px;
+            border:1px solid rgb(236, 238, 236);
+            border-radius: 14px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: honeydew;
+            color: rgb(17, 17, 17);
+        }
+        .container{
+            border:2px solid rgb(242, 248, 242);
+            width: 564px;
+            position: absolute;
+            right: 44px;
+            width: 30%;
+            margin: 130px 92px;
+            padding: 32px 82px;
+            border-radius: 20px;
+            text-align: center;
+
+
+        }
+        .form-group{
+
+            display: block;
+            text-align: center;
+        }
+        .form-group input{
+            font-size: 16px;
+            font-family: 'Baloo Bhai 2', cursive;
+            color: black;
+            border: 3px solid black;
+            border-radius: 18px;
+            margin: 6px auto;
+            padding: 3px 127px;
+            width: 33%;
+            display: block;
+            text-align: center;
+        }
+        .container button{
+            
+            font-size: 15px;
+            margin: 16px 13px;
+            padding: 4px px;
+            width: 77%;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left for logo -->
+        <div class="left">
+            <img src="https://www.freepnglogos.com/uploads/dumbbell/dumbbell-svg-png-icon-download-18.png" alt="">
+            <div>
+                Pardeep Fitness
+            </div>
+
+        </div>
+        <!-- centre for navigation -->
+        <div class="center">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Fitness calculator</a> </li>
+                <li> <a href="#">contact us</a> </li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">
+                Contact us
+            </button>
+            <button class="btn">
+                Email us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in Ludhiana Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email id">
+            </div>
+            
+            <button class="btn">Submit</button>
+            
+        </form>
+    </div>
+    
+    
+</body>
+</html>
